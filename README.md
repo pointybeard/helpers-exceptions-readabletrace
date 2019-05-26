@@ -1,6 +1,6 @@
 # PHP Helpers: Readable Trace Exception
 
--   Version: v1.0.1
+-   Version: v1.0.2
 -   Date: May 26 2019
 -   [Release notes](https://github.com/pointybeard/helpers-exceptions-readabletrace/blob/master/CHANGELOG.md)
 -   [GitHub repository](https://github.com/pointybeard/helpers-exceptions-readabletrace)
@@ -18,7 +18,7 @@ And run composer to update your dependencies:
 
 ### Requirements
 
-This library makes use of the [PHP Helpers: Path Functions](https://github.com/pointybeard/helpers-functions-paths) (`pointybeard/helpers-functions-paths`) and [PHP Helpers: String Functions](https://github.com/pointybeard/helpers-functions-strings) (`pointybeard/helpers-functions-strings`). They are installed automatically via composer.
+This library makes use of the [PHP Helpers: Path Functions](https://github.com/pointybeard/helpers-functions-paths) (`pointybeard/helpers-functions-paths`), [PHP Helpers: Debug Functions](https://github.com/pointybeard/helpers-functions-debug) (`pointybeard/helpers-functions-debug`), and [PHP Helpers: String Functions](https://github.com/pointybeard/helpers-functions-strings) (`pointybeard/helpers-functions-strings`). They are installed automatically via composer.
 
 To include all the [PHP Helpers](https://github.com/pointybeard/helpers) packages on your project, use `composer require pointybeard/helpers` or add `"pointybeard/helpers": "~1.1"` to your composer file.
 
@@ -88,16 +88,9 @@ OUTPUT;
 
 ### Placeholders
 
-The format of each trace line can be modified by setting the `format` argument when calling `getReadableTrace()`. The default format is `[{{PATH}}/{{FILENAME}}:{{LINE}}] {{CLASS}}{{TYPE}}{{FUNCTION}}();` which looks something like `[../path/to/test.php:24] foo->__construct();`.
+The format of each trace line can be modified by setting the `format` argument when calling `ReadableTraceException::getReadableTrace()`. The default format is `[{{PATH}}/{{FILENAME}}:{{LINE}}] {{CLASS}}{{TYPE}}{{FUNCTION}}();` which looks something like `[../path/to/test.php:24] foo->__construct();`.
 
-Placeholders available are:
-
--   PATH
--   FILENAME
--   LINE
--   CLASS
--   TYPE
--   FUNCTION
+Placeholders available are provided by [PHP Helpers: Debug Functions](https://github.com/pointybeard/helpers-functions-debug).
 
 ## Support
 
