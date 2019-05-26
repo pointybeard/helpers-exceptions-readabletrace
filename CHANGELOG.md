@@ -5,8 +5,16 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 **View all [Unreleased][] changes here**
 
+## [1.0.1][]
+#### Added
+-   Added `$format` argument to `ReadableTraceException::getReadableTrace()` which allows changing how each line of the trace looks.
+
+#### Changed
+-   Trace is no longer appended to the exception message. This gives better control to how/when the trace gets displayed.
+
 ## 1.0.0
 #### Added
 -   Initial release
 
-[Unreleased]: https://github.com/pointybeard/helpers-cli-progressbar/compare/1.0.0...integration
+[Unreleased]: https://github.com/pointybeard/helpers-cli-progressbar/compare/1.0.1...integration
+[1.0.1]: https://github.com/pointybeard/helpers-cli-progressbar/compare/1.0.0...1.0.1
