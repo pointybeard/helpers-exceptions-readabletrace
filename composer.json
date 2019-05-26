@@ -1,6 +1,6 @@
 {
     "name": "pointybeard/helpers-exceptions-readabletrace",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Provides an exception base class that includes method getReadableTrace(), giving simple access to a plain-text, readable, backtrace string.",
     "homepage": "https://github.com/pointybeard/helpers-exceptions-readabletrace",
     "license": "MIT",
@@ -15,7 +15,8 @@
     "require": {
         "php": ">=7.2",
         "pointybeard/helpers-functions-paths": "~1",
-        "pointybeard/helpers-functions-strings": "~1"
+        "pointybeard/helpers-functions-strings": "~1",
+        "pointybeard/helpers-functions-debug": "~1"
     },
     "require-dev": {
         "phpunit/phpunit": "^8"
